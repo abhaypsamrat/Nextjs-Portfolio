@@ -1,0 +1,61 @@
+.connect {
+  text-align: center;
+  text-decoration: underline;
+}
+.connect h3{
+  padding: 30px;
+}
+.icon {
+  padding: 10px;
+  margin: 2px 20px;
+  font-size: 40px;
+  margin: space-between;
+}
+.linkedin {
+  color: rgba(10, 102, 194, 1);
+  margin: 45px;
+}
+.github {
+  color: black;
+  margin: 45px;
+}
+.twitter {
+  color:  #00acee ;
+  margin: 45px;
+}
+
+@media (max-width: 720px) {
+  .icon {
+    padding: 10px;
+    margin: 2px 20px;
+    font-size: 40px;
+    margin: space-between;
+  }
+  .linkedin {
+    margin: 15px;
+  }
+  .github {
+    margin: 15px;
+  }
+  .twitter {
+    margin: 15px;
+  }
+}
+
+@media (max-width: 280px) {
+  .icon {
+    padding: 10px;
+    margin: 2px 20px;
+    font-size: 30px;
+    margin: space-between;
+  }
+  .linkedin {
+    margin: 10px;
+  }
+  .github {
+    margin: 10px;
+  }
+  .twitter {
+    margin: 10px;
+  }
+}

@@ -1,0 +1,22 @@
+.about {
+  text-align: justify;
+  padding: 0% 20%;
+  /* margin: -20px; */
+}
+.about h3 {
+  padding-top: 50px;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.about p {
+  text-align: justify;
+  padding-bottom: 50px;
+}
+@media (max-width: 720px) {
+  .about {
+    text-align: justify;
+    padding: 0px 30px;
+  }
+}
+

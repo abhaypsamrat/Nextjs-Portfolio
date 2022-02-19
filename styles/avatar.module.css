@@ -1,0 +1,26 @@
+.Avatar {
+  text-align: center;
+  padding: 0% 20%;
+  padding: 20px;
+}
+
+.Avatar Image {
+  height: 100px;
+  width: 100px;
+}
+.Avatar p {
+  text-align: center;
+  margin: 0px;
+}
+@media (max-width: 720px) {
+  .Avatar {
+    padding: 30px;
+  }
+  .Avatar p {
+    text-align: justify;
+  }
+  .Avatar Image {
+    height: 500px;
+    width: 500px;
+  }
+}

@@ -1,0 +1,111 @@
+.project {
+  padding: 25px;
+  padding-top: 50px;
+}
+.project h2 {
+  text-align: center;
+  text-decoration: underline;
+}
+.plist {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.list {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: rgb(204, 235, 225);
+  border-radius: 15px;
+  width: 40%;
+}
+.list h5 {
+  padding-left: 20px;
+  margin-bottom: 0px;
+}
+.list h3 {
+  text-align: center;
+  text-decoration: underline;
+}
+.list p {
+  padding: 10px;
+  margin: 10px;
+  text-align: justify;
+}
+.list button {
+  margin: 20px;
+  height: 30px;
+  font-size: 15px;
+  background-color: rgb(146, 74, 228);
+  color: white;
+  border-radius: 5px;
+}
+
+.gohome {
+  margin-left: 45%;
+  font-size: 20px;
+  padding-bottom: 50px;
+}
+
+@media (max-width: 720px) {
+  .plist {
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .list {
+    margin-top: 20px;
+    width: 93%;
+  }
+  .list button {
+    margin: 25px;
+    font-size: 15px;
+  }
+  .gohome {
+    margin-left: 36%;
+  }
+}
+
+@media (max-width: 420px) {
+  .plist {
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .list {
+    margin-top: 20px;
+    width: 93%;
+  }
+  .list button {
+    margin: 15px;
+    font-size: 14px;
+  }
+  .gohome {
+    margin-left: 30%;
+  }
+}
+@media (max-width: 320px) {
+  .plist {
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .list {
+    margin-top: 20px;
+    width: 93%;
+  }
+  .list button {
+    margin: 10px;
+    font-size: 12px;
+  }
+}
+@media (max-width: 280px) {
+  .plist {
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .list {
+    margin-top: 20px;
+    width: 93%;
+  }
+  .list button {
+    margin: 4px;
+    font-size: 10px;
+  }
+}

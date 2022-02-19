@@ -1,0 +1,99 @@
+.skill {
+  padding: 20px;
+  margin: 20px;
+}
+.skill h3 {
+  padding-top: 40px;
+  text-align: center;
+  text-decoration: underline;
+}
+.icon {
+  display: flex;
+  padding: 10px 90px;
+  margin: 20px 50px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.icon div {
+  margin: 20px 80px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.react,
+.next,
+.js,
+.html,
+.css,
+.python,
+.github,
+.git {
+  margin: 20px;
+  flex-direction: column;
+}
+
+.reactlogo,
+.nextlogo,
+.jslogo,
+.htmllogo,
+.csslogo,
+.pythonlogo,
+.githublogo,
+.gitlogo {
+  font-size: 70px;
+}
+.reactlogo {
+  color: #61dbfb;
+}
+.nextlogo {
+  color: black;
+}
+.jslogo {
+  color: #f0db4f;
+}
+.htmllogo {
+  color: #e34c26;
+}
+.csslogo {
+  color: #264de4;
+}
+.pythonlogo {
+  color: #ffd43b;
+}
+.githublogo {
+  color: black;
+}
+.gitlogo {
+  color: #f1502f;
+}
+
+@media (max-width: 360px) {
+  .reactlogo,
+  .nextlogo,
+  .jslogo,
+  .htmllogo,
+  .csslogo,
+  .pythonlogo,
+  .githublogo,
+  .gitlogo {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 320px) {
+  .icon{
+    margin-left: 10%;
+  }
+}
+@media (max-width: 280px) {
+  .icon{
+    margin-left: 5%;
+  }
+}
+@media (max-width: 250px) {
+  .icon{
+    margin-left: 1%;
+  }
+}
