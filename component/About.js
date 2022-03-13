@@ -13,8 +13,7 @@ function About() {
         <br /> I am interested in populer frontend technologies, but my major
         focus is on ReactJs.
         <br />
-        <br /> Currently, I am working on web development skills using HTML,
-        CSS, JavaScript, ReactJs, and NextJs.
+      
       </p>
     </div>
   );

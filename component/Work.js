@@ -7,11 +7,8 @@ function Work() {
     <div className={styles.work}>
       <h3>My Work</h3>
       <p>
-        I love to build and develop new applications. The best means to become
-        better at programming is by developing applications that translate
-        theory into something live and working. In addition, this practice also
-        adds to confidence, enhances code quality, and encourages documenting
-        your journey.
+      Currently, I am working on web development skills using HTML,
+        CSS, JavaScript, ReactJs, NodeJs and NextJs.
       </p>
       <button onClick={() => router.push("/project")}>view work</button>
     </div>
