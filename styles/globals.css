@@ -22,6 +22,7 @@ body {
 }
 .header h3{
   color: rgb(135, 247, 113);
+  cursor: "pointer"
 }
 .footer {
   text-align: center;
