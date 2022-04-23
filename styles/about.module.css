@@ -18,5 +18,9 @@
     text-align: justify;
     padding: 0px 30px;
   }
+  .about p{
+    font-size: 17px;
+  }
+
 }
 

@@ -30,7 +30,15 @@ body {
   height: 45px;
   padding: 10px;
 }
+.footer p{
+  margin: 10px;
+}
 
+@media (max-width: 720px) {
+  p{
+    margin: 25px;
+  }
+}
 @media (max-width: 220px) {
   .header h3{
     font-size: 15px;

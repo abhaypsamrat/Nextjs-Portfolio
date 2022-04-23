@@ -2,6 +2,7 @@ import styles from "../styles/connect.module.css";
 import { AiFillLinkedin } from "react-icons/ai";
 import { AiFillGithub } from "react-icons/ai";
 import { AiFillTwitterCircle } from "react-icons/ai";
+import { AiOutlineInstagram } from "react-icons/ai";
 
 function Connect() {
   return (
@@ -28,6 +29,13 @@ function Connect() {
           className={styles.twitter}
         >
           <AiFillTwitterCircle />
+        </a>
+        <a
+          href="https://instagram.com/abhaypsamrat"
+          target="blank"
+          className={styles.instagram}
+        >
+          <AiOutlineInstagram />
         </a>
       </div>
     </div>
