@@ -10,7 +10,7 @@ body {
   text-align: center;
   background-color: black;
   color: aliceblue;
-  height: 45px;
+  height: 55px;
   padding: 10px;
 
   /* Hold the header in top of the screen */
@@ -20,9 +20,15 @@ body {
   top: -1px;
   z-index: 10;
 }
+.first-word-uppercase-p::first-letter {
+  font-size: 35px;
+  color: rgb(135, 247, 113);
+  font-weight: bold;
+  line-height: 0.75;
+}
 .header h3{
   color: rgb(135, 247, 113);
-  cursor: "pointer"
+  cursor: pointer;
 }
 .footer {
   text-align: center;
