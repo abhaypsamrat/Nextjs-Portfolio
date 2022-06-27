@@ -1,5 +1,5 @@
-.about {
-  text-align: justify;
+.about{
+  text-align: center;
   padding: 0% 20%;
   /* margin: -20px; */
 }
@@ -21,6 +21,9 @@
   .about p{
     font-size: 17px;
   }
-
+  .edu{
+    padding: 0% 10%;
+    text-align: center;
+  }
 }
 
