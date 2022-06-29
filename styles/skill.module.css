@@ -23,6 +23,7 @@
   text-align: center;
 }
 .react,
+.node,
 .next,
 .js,
 .html,
@@ -35,6 +36,7 @@
 }
 
 .reactlogo,
+.nodelogo,
 .nextlogo,
 .jslogo,
 .htmllogo,
@@ -46,6 +48,9 @@
 }
 .reactlogo {
   color: #61dbfb;
+}
+.nodelogo {
+  color: #3c873a;
 }
 .nextlogo {
   color: black;
@@ -71,6 +76,7 @@
 
 @media (max-width: 360px) {
   .reactlogo,
+  .nodelogo,
   .nextlogo,
   .jslogo,
   .htmllogo,
@@ -83,17 +89,17 @@
 }
 
 @media (max-width: 320px) {
-  .icon{
+  .icon {
     margin-left: 10%;
   }
 }
 @media (max-width: 280px) {
-  .icon{
+  .icon {
     margin-left: 5%;
   }
 }
 @media (max-width: 250px) {
-  .icon{
+  .icon {
     margin-left: 1%;
   }
 }

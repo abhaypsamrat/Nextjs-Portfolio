@@ -12,8 +12,8 @@ function Avatar() {
       </h2>
 
       <p>
-        A Front End Developer passionate about developing new and useful
-        application.
+        A aspiring MERN stack Developer passionate about developing new and
+        useful application.
       </p>
     </div>
   );

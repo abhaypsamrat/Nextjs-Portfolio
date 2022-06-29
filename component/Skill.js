@@ -7,17 +7,22 @@ import { DiCss3 } from "react-icons/di";
 import { FaPython } from "react-icons/fa";
 import { AiOutlineGithub } from "react-icons/ai";
 import { FaGitSquare } from "react-icons/fa";
+import { FaNode } from "react-icons/fa";
 
 function Skill() {
   return (
     <div className={styles.skill}>
       <h3>Work With</h3>
       <div className={styles.icon}>
-      <div className={styles.react}>
-          <FaReact className={styles.reactlogo}  /> 
+        <div className={styles.react}>
+          <FaReact className={styles.reactlogo} />
           <i>ReactJs</i>
         </div>
-       
+        <div className={styles.node}>
+          <FaNode className={styles.nodelogo} />
+          <i>NodeJs</i>
+        </div>
+
         <div className={styles.next}>
           <SiNextdotjs className={styles.nextlogo} />
           <i>NextJs</i>
