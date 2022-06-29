@@ -3,8 +3,9 @@ body {
   padding: 0px;
   margin: 0px;
   font-size: large;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  /* font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif; */
+    font-family: 'Roboto Slab', serif;
 }
 
 .header {
@@ -13,6 +14,7 @@ body {
   color: aliceblue;
   height: 55px;
   padding: 10px;
+
 
   /* Hold the header in top of the screen */
 

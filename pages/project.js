@@ -34,6 +34,7 @@ export default function project() {
             >
               <button>View Live</button>
             </a>
+
             <a
               href="https://github.com/abhaypsamrat/Keep-Item"
               passHref
@@ -182,8 +183,8 @@ export default function project() {
         </div>
       </div>
       <span className={styles.gohome}>
-        <Link href="/">
-          <a>Back to home</a>
+        <Link href="/" passHref>
+          <button>Back to home</button>
         </Link>
       </span>
     </div>

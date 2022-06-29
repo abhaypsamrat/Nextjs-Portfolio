@@ -8,6 +8,7 @@ function Connect() {
   return (
     <div className={styles.connect}>
       <h3>Connect with me</h3>
+
       <div className={styles.icon}>
         <a
           href="https://www.linkedin.com/in/abhaypsamrat"

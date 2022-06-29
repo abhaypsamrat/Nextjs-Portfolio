@@ -1,7 +1,9 @@
-.about{
+.about {
   text-align: center;
   padding: 0% 20%;
   /* margin: -20px; */
+  line-height: 2.0;
+  opacity: 1.9;
 }
 .about h3 {
   padding-top: 30px;
@@ -17,13 +19,13 @@
   .about {
     text-align: justify;
     padding: 0px 30px;
+    line-height: 1.8;
   }
-  .about p{
+  .about p {
     font-size: 17px;
   }
-  .edu{
+  .edu {
     padding: 0% 10%;
     text-align: center;
   }
 }
-

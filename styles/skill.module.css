@@ -7,6 +7,9 @@
   text-align: center;
   text-decoration: underline;
 }
+.skill i {
+  display: grid;
+}
 .icon {
   display: flex;
   padding: 10px 90px;
@@ -16,6 +19,8 @@
   align-items: center;
   text-align: center;
 }
+
+
 .icon div {
   margin: 20px 80px;
   justify-content: center;
@@ -35,6 +40,63 @@
   flex-direction: column;
 }
 
+/* This section rotate icon */
+
+.reactlogo:hover {
+  animation-name: rotate;
+  animation-duration: 0.8s;
+  animation-iteration-count: 1;
+}
+.nodelogo:hover {
+  animation-name: rotate;
+  animation-duration: 0.8s;
+  animation-iteration-count: 1;
+}
+.nextlogo:hover {
+  animation-name: rotate;
+  animation-duration: 0.8s;
+  animation-iteration-count: 1;
+}
+.jslogo:hover {
+  animation-name: rotate;
+  animation-duration: 0.8s;
+  animation-iteration-count: 1;
+}
+.htmllogo:hover {
+  animation-name: rotate;
+  animation-duration: 0.8s;
+  animation-iteration-count: 1;
+}
+.csslogo:hover {
+  animation-name: rotate;
+  animation-duration: 0.8s;
+  animation-iteration-count: 1;
+}
+.pythonlogo:hover {
+  animation-name: rotate;
+  animation-duration: 0.8s;
+  animation-iteration-count: 1;
+}
+.githublogo:hover {
+  animation-name: rotate;
+  animation-duration: 0.8s;
+  animation-iteration-count: 1;
+}
+.gitlogo:hover {
+  animation-name: rotate;
+  animation-duration: 0.8s;
+  animation-iteration-count: 1;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg) scale(1.2);
+  }
+}
+
+
 .reactlogo,
 .nodelogo,
 .nextlogo,
@@ -44,7 +106,7 @@
 .pythonlogo,
 .githublogo,
 .gitlogo {
-  font-size: 70px;
+  font-size: 60px;
 }
 .reactlogo {
   color: #61dbfb;
@@ -73,6 +135,14 @@
 .gitlogo {
   color: #f1502f;
 }
+@media (max-width: 720px) {
+  .icon {
+    display: flex;
+    flex-direction: row;
+    margin: 1.3em;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
 
 @media (max-width: 360px) {
   .reactlogo,
@@ -84,7 +154,7 @@
   .pythonlogo,
   .githublogo,
   .gitlogo {
-    font-size: 50px;
+    font-size: 55px;
   }
 }
 
@@ -103,3 +173,4 @@
     margin-left: 1%;
   }
 }
+
