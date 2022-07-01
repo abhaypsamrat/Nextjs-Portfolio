@@ -12,6 +12,41 @@ export default function project() {
         <div className={styles.plist}>
           {/* 1 project */}
           <div className={styles.list}>
+            <h3>Check Live Weather</h3>
+            <p>
+              This application keep updated you on weather. Search your city
+              name and see live weather on your city. It work as progressive web
+              appication (PWA) .
+            </p>
+            <h5>Technologies Used</h5>
+            <i>
+              <ul>
+                <li>ReactJs</li>
+                <li>JavaScript</li>
+                <li>HTML</li>
+                <li>CSS</li>
+              </ul>
+            </i>
+            <a
+              href="https://live-weather-search.netlify.app/"
+              passHref
+              target="_blank"
+              rel="noreferrer"
+            >
+              <button>View Live</button>
+            </a>
+
+            <a
+              href="https://github.com/abhaypsamrat/Live-Weather-App"
+              passHref
+              target="_blank"
+              rel="noreferrer"
+            >
+              <button>Source Code</button>
+            </a>
+          </div>
+          {/* 2 project */}
+          <div className={styles.list}>
             <h3>Keep Notes</h3>
             <p>
               This application keep save your item on list. It work as
@@ -45,7 +80,7 @@ export default function project() {
             </a>
           </div>
 
-          {/* 2 project */}
+          {/* 3 project */}
 
           <div className={styles.list}>
             <h3>Text/Sentence Counter</h3>
@@ -81,8 +116,38 @@ export default function project() {
               <button>Source Code</button>
             </a>
           </div>
+          {/* 4 project */}
+          <div className={styles.list}>
+            <h3>Coding Blog</h3>
+            <p>This appication is a tech blog side.</p>
+            <h5>Technologies Used</h5>
+            <i>
+              <ul>
+                <li>ReactJs</li>
+                <li>JavaScript</li>
+                <li>HTML</li>
+                <li>CSS</li>
+              </ul>
+            </i>
+            <a
+              href="https://hungry-coder.netlify.app/"
+              passHref
+              target="_blank"
+              rel="noreferrer"
+            >
+              <button>View Live</button>
+            </a>
+            <a
+              href="https://github.com/abhaypsamrat/Hungry-Coder"
+              passHref
+              target="_blank"
+              rel="noreferrer"
+            >
+              <button>Source Code</button>
+            </a>
+          </div>
 
-          {/* 3 project */}
+          {/* 5 project */}
 
           <div className={styles.list}>
             <h3>Choose Movies</h3>
@@ -117,7 +182,7 @@ export default function project() {
             </a>
           </div>
 
-          {/* 4 project */}
+          {/* 6 project */}
 
           <div className={styles.list}>
             <h3>Notes On Cloud</h3>
@@ -150,7 +215,7 @@ export default function project() {
             </a>
           </div>
 
-          {/* 5 project */}
+          {/* 7 project */}
 
           <div className={styles.list}>
             <h3>ToDo Application</h3>
