@@ -12,7 +12,7 @@ function Avatar() {
       </h2>
 
       <p>
-        A aspiring MERN stack Developer passionate about developing new and
+        A aspiring MERN stack developer passionate about developing new and
         useful application.
       </p>
     </div>
