@@ -9,7 +9,7 @@ function About() {
         attending Kashi Institute Of Technology, Varanasi. <br />
         <br />
         I love working in web development and i want to become a skilled web
-        developer. I like to learn new technologies. I am interested in populer
+        developer. I like to learn new technologies and creating with passion. I am interested in populer
         frontend technologies.
         <br />
       </p>
