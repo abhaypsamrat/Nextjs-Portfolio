@@ -8,6 +8,9 @@ import { FaPython } from "react-icons/fa";
 import { AiOutlineGithub } from "react-icons/ai";
 import { FaGitSquare } from "react-icons/fa";
 import { FaNode } from "react-icons/fa";
+import { SiExpress } from "react-icons/si";
+import { SiMongodb } from "react-icons/si";
+import { SiPostman } from "react-icons/si";
 
 function Skill() {
   return (
@@ -22,7 +25,14 @@ function Skill() {
           <FaNode className={styles.nodelogo} />
           <i>NodeJs</i>
         </div>
-
+        <div className={styles.node}>
+          <SiExpress className={styles.expresslogo} />
+          <i>ExpressJs</i>
+        </div>
+        <div className={styles.node}>
+          <SiMongodb className={styles.mongodblogo} />
+          <i>MongoDB</i>
+        </div>
         <div className={styles.next}>
           <SiNextdotjs className={styles.nextlogo} />
           <i>NextJs</i>
@@ -42,6 +52,10 @@ function Skill() {
         <div className={styles.python}>
           <FaPython className={styles.pythonlogo} />
           <i>Python</i>
+        </div>
+        <div className={styles.python}>
+          <SiPostman className={styles.postmanlogo} />
+          <i>Postman</i>
         </div>
         <div className={styles.github}>
           <AiOutlineGithub className={styles.githublogo} />
