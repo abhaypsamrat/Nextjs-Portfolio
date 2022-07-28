@@ -20,7 +20,6 @@
   text-align: center;
 }
 
-
 .icon div {
   margin: 20px 80px;
   justify-content: center;
@@ -29,11 +28,14 @@
 }
 .react,
 .node,
+.express,
+.mongodb,
 .next,
 .js,
 .html,
 .css,
 .python,
+.postman,
 .github,
 .git {
   margin: 20px;
@@ -48,6 +50,16 @@
   animation-iteration-count: 1;
 }
 .nodelogo:hover {
+  animation-name: rotate;
+  animation-duration: 0.8s;
+  animation-iteration-count: 1;
+}
+.expresslogo:hover {
+  animation-name: rotate;
+  animation-duration: 0.8s;
+  animation-iteration-count: 1;
+}
+.mongodblogo:hover {
   animation-name: rotate;
   animation-duration: 0.8s;
   animation-iteration-count: 1;
@@ -77,6 +89,11 @@
   animation-duration: 0.8s;
   animation-iteration-count: 1;
 }
+.postmanlogo:hover {
+  animation-name: rotate;
+  animation-duration: 0.8s;
+  animation-iteration-count: 1;
+}
 .githublogo:hover {
   animation-name: rotate;
   animation-duration: 0.8s;
@@ -96,23 +113,31 @@
   }
 }
 
-
 .reactlogo,
 .nodelogo,
+.expresslogo,
+.mongodblogo,
 .nextlogo,
 .jslogo,
 .htmllogo,
 .csslogo,
 .pythonlogo,
+.postmanlogo,
 .githublogo,
 .gitlogo {
-  font-size: 60px;
+  font-size: 50px;
 }
 .reactlogo {
   color: #61dbfb;
 }
 .nodelogo {
   color: #3c873a;
+}
+.expresslogo {
+  color: #060a06;
+}
+.mongodblogo {
+  color: #589636;
 }
 .nextlogo {
   color: black;
@@ -128,6 +153,9 @@
 }
 .pythonlogo {
   color: #ffd43b;
+}
+.postmanlogo {
+  color: #ef5b25;
 }
 .githublogo {
   color: black;
@@ -147,14 +175,17 @@
 @media (max-width: 360px) {
   .reactlogo,
   .nodelogo,
+  .expresslogo,
+  .mongodblogo,
   .nextlogo,
   .jslogo,
   .htmllogo,
   .csslogo,
   .pythonlogo,
+  .postmanlogo,
   .githublogo,
   .gitlogo {
-    font-size: 55px;
+    font-size: 50px;
   }
 }
 
@@ -173,4 +204,3 @@
     margin-left: 1%;
   }
 }
-
