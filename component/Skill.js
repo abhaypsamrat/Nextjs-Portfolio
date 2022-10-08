@@ -25,11 +25,11 @@ function Skill() {
           <FaNode className={styles.nodelogo} />
           <i>NodeJs</i>
         </div>
-        <div className={styles.node}>
+        <div className={styles.express}>
           <SiExpress className={styles.expresslogo} />
           <i>ExpressJs</i>
         </div>
-        <div className={styles.node}>
+        <div className={styles.mongodb}>
           <SiMongodb className={styles.mongodblogo} />
           <i>MongoDB</i>
         </div>
@@ -53,7 +53,7 @@ function Skill() {
           <FaPython className={styles.pythonlogo} />
           <i>Python</i>
         </div>
-        <div className={styles.python}>
+        <div className={styles.postman}>
           <SiPostman className={styles.postmanlogo} />
           <i>Postman</i>
         </div>

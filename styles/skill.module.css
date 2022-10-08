@@ -125,8 +125,9 @@
 .postmanlogo,
 .githublogo,
 .gitlogo {
-  font-size: 50px;
+  font-size: 45px;
 }
+
 .reactlogo {
   color: #61dbfb;
 }
@@ -172,7 +173,7 @@
   }
 }
 
-@media (max-width: 360px) {
+/* @media (max-width: 360px) {
   .reactlogo,
   .nodelogo,
   .expresslogo,
@@ -187,7 +188,7 @@
   .gitlogo {
     font-size: 50px;
   }
-}
+} */
 
 @media (max-width: 320px) {
   .icon {
