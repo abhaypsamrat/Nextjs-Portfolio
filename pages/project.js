@@ -12,6 +12,42 @@ export default function project() {
         <div className={styles.plist}>
           {/* 1 project */}
           <div className={styles.list}>
+            <h3>Quiz Application</h3>
+            <p>
+              Quiz Application is a collection of different types of quizzes
+              like technical, games, sports, etc. A user can access/play all of
+              the quiz and can attempt any of the one. It work as progressive
+              web appication (PWA) .
+            </p>
+            <h5>Technologies Used</h5>
+            <i>
+              <ul>
+                <li>ReactJs</li>
+                <li>JavaScript</li>
+                <li>HTML</li>
+                <li>CSS</li>
+              </ul>
+            </i>
+            <a
+              href="https://quiz-application-live.netlify.app/"
+              passHref
+              target="_blank"
+              rel="noreferrer"
+            >
+              <button>View Live</button>
+            </a>
+
+            <a
+              href="https://github.com/abhaypsamrat/Quiz-Application"
+              passHref
+              target="_blank"
+              rel="noreferrer"
+            >
+              <button>Source Code</button>
+            </a>
+          </div>
+          {/* 1 project */}
+          <div className={styles.list}>
             <h3>Check Live Weather</h3>
             <p>
               This application keep updated you on weather. Search your city
@@ -238,6 +274,40 @@ export default function project() {
             </a>
             <a
               href="https://github.com/abhaypsamrat/ToDo-React-TypeScript"
+              passHref
+              target="_blank"
+              rel="noreferrer"
+            >
+              <button>Source Code</button>
+            </a>
+          </div>
+          {/* 8 project */}
+
+          <div className={styles.list}>
+            <h3>Quote Generator</h3>
+            <p>
+              A Random Quote Generator is capable of pulling quotes randomly
+              from an API.
+            </p>
+            <h5>Technologies Used</h5>
+            <i>
+              <ul>
+                <li>ReactJs</li>
+                <li>JavaScript</li>
+                <li>HTML</li>
+                <li>CSS</li>
+              </ul>
+            </i>
+            <a
+              href="https://random-thougth.netlify.app/"
+              passHref
+              target="_blank"
+              rel="noreferrer"
+            >
+              <button>View Live</button>
+            </a>
+            <a
+              href="https://github.com/abhaypsamrat/Quotes-Generator"
               passHref
               target="_blank"
               rel="noreferrer"
