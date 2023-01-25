@@ -7,8 +7,8 @@ function Work() {
     <div className={styles.work}>
       <h3>My Work</h3>
       <p>
-      Currently, I am working on web development skills using HTML,
-        CSS, JavaScript, ReactJs, NodeJs and NextJs.
+        Currently, I am working on web development skills using JavaScript,
+        ReactJs, NodeJs, ExpressJs and MongoDB.
       </p>
       <button onClick={() => router.push("/project")}>view work</button>
     </div>

@@ -1,6 +1,6 @@
 import styles from "../styles/skill.module.css";
 import { FaReact } from "react-icons/fa";
-import { SiNextdotjs } from "react-icons/si";
+// import { SiNextdotjs } from "react-icons/si";
 import { DiJavascript1 } from "react-icons/di";
 import { AiOutlineHtml5 } from "react-icons/ai";
 import { DiCss3 } from "react-icons/di";
@@ -33,10 +33,10 @@ function Skill() {
           <SiMongodb className={styles.mongodblogo} />
           <i>MongoDB</i>
         </div>
-        <div className={styles.next}>
+        {/* <div className={styles.next}>
           <SiNextdotjs className={styles.nextlogo} />
           <i>NextJs</i>
-        </div>
+        </div> */}
         <div className={styles.js}>
           <DiJavascript1 className={styles.jslogo} />
           <i>JavaScript</i>
