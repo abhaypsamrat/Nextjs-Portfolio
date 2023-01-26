@@ -28,3 +28,9 @@
     text-align: center;
   }
 }
+@media (max-width: 420px) {
+.about {
+    padding: 0px 15px;
+    line-height: 1.8;
+  }
+}
