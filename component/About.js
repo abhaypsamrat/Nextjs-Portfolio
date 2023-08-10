@@ -6,8 +6,8 @@ function About() {
       <h3>About</h3>
 
       <p>
-        Abhay Pratap Samrat is a final year computer science student at Kashi
-        Institute of Technology, Varanasi.
+        Abhay Pratap Samrat, a passionate web developer with a B.TECH
+        in Computer Science from Kashi Institute of Technology, Varanasi.
         <br /> His passion for web development has driven him to constantly seek
         new ways to improve his skills and knowledge. He is a self-motivated
         learner who is always eager to explore new technologies and create
