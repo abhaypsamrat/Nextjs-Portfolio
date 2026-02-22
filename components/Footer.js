@@ -10,9 +10,9 @@ export default function Footer() {
           <p className={styles.copyright}>
             © {currentYear} Abhay Pratap Samrat. All rights reserved.
           </p>
-          {/* <p className={styles.madeWith}>
+          <p className={styles.madeWith}>
             Made with <span className={styles.heart}>❤️</span> using Next.js
-          </p> */}
+          </p>
         </div>
       </div>
     </footer>
