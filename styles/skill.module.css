@@ -1,207 +1,178 @@
 .skill {
-  padding: 20px;
-  margin: 20px;
+  padding: 100px 0;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  position: relative;
 }
-.skill h3 {
-  padding-top: 40px;
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.sectionTitle {
+  font-size: 2.5rem;
   text-align: center;
-  text-decoration: underline;
+  margin-bottom: 1rem;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  position: relative;
 }
-.skill i {
+
+.sectionTitle::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 2px;
+}
+
+.subtitle {
+  text-align: center;
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+  margin-bottom: 3rem;
+}
+
+.skillsGrid {
   display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
 }
-.icon {
+
+.skillCard {
+  background: white;
+  border-radius: 20px;
+  padding: 2rem 1.5rem;
   display: flex;
-  padding: 10px 90px;
-  margin: 20px 50px;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.icon div {
-  margin: 20px 80px;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-.react,
-.node,
-.express,
-.mongodb,
-.next,
-.js,
-.html,
-.css,
-.python,
-.postman,
-.github,
-.git {
-  margin: 20px;
   flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
 }
 
-/* This section rotate icon */
+.skillCard::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: var(--skill-color);
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
 
-.reactlogo:hover {
-  animation-name: rotate;
-  animation-duration: 0.8s;
-  animation-iteration-count: 1;
+.skillCard:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
 }
-.nodelogo:hover {
-  animation-name: rotate;
-  animation-duration: 0.8s;
-  animation-iteration-count: 1;
+
+.skillCard:hover::before {
+  transform: scaleX(1);
 }
-.expresslogo:hover {
-  animation-name: rotate;
-  animation-duration: 0.8s;
-  animation-iteration-count: 1;
+
+.iconWrapper {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #f5f7fa 0%, #e8ecf1 100%);
+  border-radius: 20px;
+  transition: all 0.3s ease;
 }
-.mongodblogo:hover {
-  animation-name: rotate;
-  animation-duration: 0.8s;
-  animation-iteration-count: 1;
+
+.skillCard:hover .iconWrapper {
+  background: linear-gradient(135deg, rgba(99, 102, 241, 0.1) 0%, rgba(118, 75, 162, 0.1) 100%);
+  transform: scale(1.1) rotate(5deg);
 }
-.nextlogo:hover {
-  animation-name: rotate;
-  animation-duration: 0.8s;
-  animation-iteration-count: 1;
+
+.icon {
+  font-size: 3rem;
+  color: var(--skill-color);
+  transition: all 0.3s ease;
 }
-.jslogo:hover {
-  animation-name: rotate;
-  animation-duration: 0.8s;
-  animation-iteration-count: 1;
+
+.skillCard:hover .icon {
+  transform: scale(1.2);
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2));
 }
-.htmllogo:hover {
-  animation-name: rotate;
-  animation-duration: 0.8s;
-  animation-iteration-count: 1;
+
+.skillName {
+  font-weight: 600;
+  color: var(--text-primary);
+  font-size: 1rem;
+  text-align: center;
 }
-.csslogo:hover {
-  animation-name: rotate;
-  animation-duration: 0.8s;
-  animation-iteration-count: 1;
-}
-.pythonlogo:hover {
-  animation-name: rotate;
-  animation-duration: 0.8s;
-  animation-iteration-count: 1;
-}
-.postmanlogo:hover {
-  animation-name: rotate;
-  animation-duration: 0.8s;
-  animation-iteration-count: 1;
-}
-.githublogo:hover {
-  animation-name: rotate;
-  animation-duration: 0.8s;
-  animation-iteration-count: 1;
-}
-.gitlogo:hover {
-  animation-name: rotate;
-  animation-duration: 0.8s;
-  animation-iteration-count: 1;
-}
-@keyframes rotate {
-  0% {
-    transform: rotate(0deg);
+
+@media (max-width: 768px) {
+  .skill {
+    padding: 80px 0;
   }
-  100% {
-    transform: rotate(360deg) scale(1.2);
+
+  .sectionTitle {
+    font-size: 2rem;
   }
-}
 
-.reactlogo,
-.nodelogo,
-.expresslogo,
-.mongodblogo,
-.nextlogo,
-.jslogo,
-.htmllogo,
-.csslogo,
-.pythonlogo,
-.postmanlogo,
-.githublogo,
-.gitlogo {
-  font-size: 45px;
-}
+  .skillsGrid {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 1.5rem;
+  }
 
-.reactlogo {
-  color: #61dbfb;
-}
-.nodelogo {
-  color: #3c873a;
-}
-.expresslogo {
-  color: #060a06;
-}
-.mongodblogo {
-  color: #589636;
-}
-.nextlogo {
-  color: black;
-}
-.jslogo {
-  color: #f0db4f;
-}
-.htmllogo {
-  color: #e34c26;
-}
-.csslogo {
-  color: #264de4;
-}
-.pythonlogo {
-  color: #ffd43b;
-}
-.postmanlogo {
-  color: #ef5b25;
-}
-.githublogo {
-  color: black;
-}
-.gitlogo {
-  color: #f1502f;
-}
-@media (max-width: 720px) {
+  .skillCard {
+    padding: 1.5rem 1rem;
+  }
+
+  .iconWrapper {
+    width: 60px;
+    height: 60px;
+  }
+
   .icon {
-    display: flex;
-    flex-direction: row;
-    margin: 1.3em;
-    grid-template-columns: 1fr 1fr 1fr;
+    font-size: 2.5rem;
   }
 }
 
-/* @media (max-width: 360px) {
-  .reactlogo,
-  .nodelogo,
-  .expresslogo,
-  .mongodblogo,
-  .nextlogo,
-  .jslogo,
-  .htmllogo,
-  .csslogo,
-  .pythonlogo,
-  .postmanlogo,
-  .githublogo,
-  .gitlogo {
-    font-size: 50px;
+@media (max-width: 480px) {
+  .skill {
+    padding: 60px 0;
   }
-} */
 
-@media (max-width: 320px) {
-  .icon {
-    margin-left: 10%;
+  .sectionTitle {
+    font-size: 1.75rem;
   }
-}
-@media (max-width: 280px) {
-  .icon {
-    margin-left: 5%;
+
+  .skillsGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
   }
-}
-@media (max-width: 250px) {
+
+  .skillCard {
+    padding: 1.25rem 0.75rem;
+  }
+
+  .iconWrapper {
+    width: 50px;
+    height: 50px;
+  }
+
   .icon {
-    margin-left: 1%;
+    font-size: 2rem;
+  }
+
+  .skillName {
+    font-size: 0.9rem;
   }
 }
