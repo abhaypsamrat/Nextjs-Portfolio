@@ -16,6 +16,7 @@ function Avatar() {
                 height={280}
                 className={styles.avatarImage}
                 priority
+                unoptimized
               />
               <div className={styles.imageGlow}></div>
             </div>
