@@ -1,33 +1,123 @@
-.Avatar {
-  text-align: center;
-  padding: 0% 20%;
-  padding: 20px;
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 120px 0 80px;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  position: relative;
+  overflow: hidden;
 }
 
-.Avatar Image {
-  height: 100px;
-  width: 100px;
+.hero::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -50%;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, rgba(99, 102, 241, 0.1) 0%, transparent 70%);
+  animation: pulse 4s ease-in-out infinite;
 }
-.Avatar h2{
-  color: rgb(40, 140, 21);
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.5;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 0.8;
+  }
 }
-/* code for Waving hand */
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  position: relative;
+  z-index: 1;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.imageWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.imageContainer {
+  position: relative;
+  animation: fadeInUp 0.8s ease-out;
+}
+
+.avatarImage {
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center 30%;
+  border: 5px solid white;
+  box-shadow: 0 20px 60px rgba(99, 102, 241, 0.3);
+  position: relative;
+  z-index: 2;
+}
+
+.imageGlow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  filter: blur(30px);
+  opacity: 0.5;
+  z-index: 1;
+  animation: glow 3s ease-in-out infinite;
+}
+
+@keyframes glow {
+  0%, 100% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0.5;
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.1);
+    opacity: 0.7;
+  }
+}
+
+.textContent {
+  animation: fadeInUp 0.8s ease-out 0.2s both;
+}
+
+.greeting {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  margin-bottom: 0.5rem;
+}
 
 .wave {
-  animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
-  animation-duration: 2.5s; /* Change to speed up or slow down */
-  animation-iteration-count: infinite; /* Never stop waving :) */
-  transform-origin: 70% 70%; /* Pivot around the bottom-left palm */
   display: inline-block;
+  animation: wave-animation 2.5s ease-in-out infinite;
+  transform-origin: 70% 70%;
 }
 
 @keyframes wave-animation {
-  0% {
+  0%, 100% {
     transform: rotate(0deg);
   }
   10% {
     transform: rotate(14deg);
-  } /* The following five values can be played with to make the waving more or less extreme */
+  }
   20% {
     transform: rotate(-8deg);
   }
@@ -42,29 +132,187 @@
   }
   60% {
     transform: rotate(0deg);
-  } /* Reset for the last half to pause */
-  100% {
-    transform: rotate(0deg);
   }
 }
-/* code for Waving hand */
 
-.Avatar p {
-  text-align: center;
-  margin: 0px;
+.name {
+  font-size: 3.5rem;
+  font-weight: 800;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 0.5rem;
+  line-height: 1.2;
 }
-@media (max-width: 720px) {
-  .Avatar {
-    padding: 30px;
+
+.title {
+  font-size: 1.5rem;
+  color: var(--primary);
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.description {
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  line-height: 1.8;
+  margin-bottom: 2rem;
+  max-width: 600px;
+}
+
+.ctaButtons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.primaryButton,
+.secondaryButton {
+  padding: 0.875rem 2rem;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.primaryButton {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  box-shadow: 0 4px 15px rgba(99, 102, 241, 0.4);
+}
+
+.primaryButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(99, 102, 241, 0.5);
+}
+
+.secondaryButton {
+  background: white;
+  color: var(--primary);
+  border: 2px solid var(--primary);
+}
+
+.secondaryButton:hover {
+  background: var(--primary);
+  color: white;
+  transform: translateY(-2px);
+}
+
+.scrollIndicator {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateX(-50%) translateY(0);
   }
-  .Avatar p {
-    text-align: justify;
-    margin: 25px;
-    font-size: 17px;
-    line-height: 1.8;
+  50% {
+    transform: translateX(-50%) translateY(-10px);
   }
-  .Avatar Image {
-    height: 500px;
-    width: 500px;
+}
+
+.mouse {
+  width: 24px;
+  height: 40px;
+  border: 2px solid var(--text-secondary);
+  border-radius: 15px;
+  position: relative;
+}
+
+.wheel {
+  width: 4px;
+  height: 8px;
+  background: var(--text-secondary);
+  border-radius: 2px;
+  position: absolute;
+  top: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: scroll 2s infinite;
+}
+
+@keyframes scroll {
+  0% {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(-50%) translateY(12px);
+  }
+}
+
+@media (max-width: 968px) {
+  .content {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    text-align: center;
+  }
+
+  .imageWrapper {
+    order: -1;
+  }
+
+  .description {
+    max-width: 100%;
+  }
+
+  .ctaButtons {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 100px 0 60px;
+  }
+  
+  .imageWrapper {
+    margin-top: 20px;
+  }
+
+  .name {
+    font-size: 2.5rem;
+  }
+
+  .title {
+    font-size: 1.25rem;
+  }
+
+  .description {
+    font-size: 1rem;
+  }
+
+  .avatarImage {
+    width: 220px;
+    height: 220px;
+  }
+}
+
+@media (max-width: 480px) {
+  .name {
+    font-size: 2rem;
+  }
+
+  .greeting {
+    font-size: 1.25rem;
+  }
+
+  .primaryButton,
+  .secondaryButton {
+    padding: 0.75rem 1.5rem;
+    font-size: 0.9rem;
   }
 }

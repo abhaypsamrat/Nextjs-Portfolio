@@ -1,101 +1,132 @@
 .work {
-  text-align: center;
-  padding: 0% 20%;
-  padding-bottom: 50px;
-}
-.work h3 {
-  text-align: center;
-  text-decoration: underline;
-  padding-top: 50px;
-}
-.work p {
-  text-align: justify;
-  padding-bottom: 20px;
-}
-
-.work button {
-  font-size: 15px;
-  height: auto;
-  padding: 0.6em 2em;
-  border: none;
-  outline: none;
-  color: rgb(255, 255, 255);
-  background: #111;
-  cursor: pointer;
+  padding: 100px 0;
+  background: var(--bg-primary);
   position: relative;
-  z-index: 0;
-  border-radius: 10px;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
 }
 
-.work button:before {
-  content: "";
-  background: linear-gradient(
-    45deg,
-    #ff0000,
-    #ff7300,
-    #fffb00,
-    #48ff00,
-    #00ffd5,
-    #002bff,
-    #7a00ff,
-    #ff00c8,
-    #ff0000
-  );
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  text-align: center;
+}
+
+.sectionTitle {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  position: relative;
+}
+
+.sectionTitle::after {
+  content: '';
   position: absolute;
-  top: -2px;
-  left: -2px;
-  background-size: 400%;
-  z-index: -1;
-  filter: blur(5px);
-  -webkit-filter: blur(5px);
-  width: calc(100% + 4px);
-  height: calc(100% + 4px);
-  animation: glowing-button-85 20s linear infinite;
-  transition: opacity 0.3s ease-in-out;
-  border-radius: 10px;
-}
-.work button:hover {
-  box-shadow: rgba(44, 187, 99, 0.35) 0 -25px 18px -14px inset,
-    rgba(44, 187, 99, 0.25) 0 1px 2px, rgba(44, 187, 99, 0.25) 0 2px 4px,
-    rgba(44, 187, 99, 0.25) 0 4px 8px, rgba(44, 187, 99, 0.25) 0 8px 16px,
-    rgba(44, 187, 99, 0.25) 0 16px 32px;
-  transform: scale(1.05) rotate(-1deg);
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 2px;
 }
 
-@keyframes glowing-button-85 {
-  0% {
-    background-position: 0 0;
-  }
-  50% {
-    background-position: 400% 0;
-  }
-  100% {
-    background-position: 0 0;
-  }
+.description {
+  font-size: 1.2rem;
+  color: var(--text-secondary);
+  line-height: 1.8;
+  max-width: 800px;
+  margin: 0 auto 3rem;
 }
 
-.work button:after {
-  z-index: -1;
-  content: "";
+.buttonWrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.viewWorkButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem 2.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: white;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 50px;
+  box-shadow: 0 4px 15px rgba(99, 102, 241, 0.4);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.viewWorkButton::before {
+  content: '';
   position: absolute;
+  top: 0;
+  left: -100%;
   width: 100%;
   height: 100%;
-  background: #222;
-  left: 0;
-  top: 0;
-  border-radius: 10px;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+  transition: left 0.5s ease;
 }
 
-@media (max-width: 720px) {
+.viewWorkButton:hover::before {
+  left: 100%;
+}
+
+.viewWorkButton:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 25px rgba(99, 102, 241, 0.5);
+}
+
+.arrowIcon {
+  font-size: 1.25rem;
+  transition: transform 0.3s ease;
+}
+
+.viewWorkButton:hover .arrowIcon {
+  transform: translateX(5px);
+}
+
+@media (max-width: 768px) {
   .work {
-    text-align: center;
-    padding: 0px 30px;
+    padding: 80px 0;
   }
-  .work p {
-    font-size: 17px;
-    line-height: 1.8;
+
+  .sectionTitle {
+    font-size: 2rem;
+  }
+
+  .description {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+  }
+
+  .viewWorkButton {
+    padding: 0.875rem 2rem;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .work {
+    padding: 60px 0;
+  }
+
+  .sectionTitle {
+    font-size: 1.75rem;
+  }
+
+  .description {
+    font-size: 1rem;
+  }
+
+  .viewWorkButton {
+    padding: 0.75rem 1.5rem;
+    font-size: 0.95rem;
   }
 }

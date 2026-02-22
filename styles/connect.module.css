@@ -1,71 +1,188 @@
 .connect {
+  padding: 100px 0;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  position: relative;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
   text-align: center;
-  text-decoration: underline;
 }
-.connect h3{
-  padding: 30px;
+
+.sectionTitle {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  position: relative;
 }
+
+.sectionTitle::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 2px;
+}
+
+.subtitle {
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+  margin-bottom: 3rem;
+}
+
+.socialLinks {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.socialLink {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1.5rem;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  text-decoration: none;
+  color: var(--text-primary);
+  min-width: 120px;
+  position: relative;
+  overflow: hidden;
+}
+
+.socialLink::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--social-color);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 0;
+}
+
+.socialLink:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  color: white;
+}
+
+.socialLink:hover::before {
+  opacity: 1;
+}
+
+.iconWrapper {
+  position: relative;
+  z-index: 1;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #f5f7fa 0%, #e8ecf1 100%);
+  border-radius: 15px;
+  transition: all 0.3s ease;
+}
+
+.socialLink:hover .iconWrapper {
+  background: rgba(255, 255, 255, 0.2);
+  transform: scale(1.1) rotate(5deg);
+}
+
 .icon {
-  padding: 10px;
-  margin: 2px 20px;
-  font-size: 40px;
-  margin: space-between;
-}
-.linkedin {
-  color: rgba(10, 102, 194, 1);
-  margin: 45px;
-}
-.github {
-  color: black;
-  margin: 45px;
-}
-.twitter {
-  color:  #00acee ;
-  margin: 45px;
-}
-.instagram {
-  color: rgb(185, 45, 45);
-  margin: 45px;
+  font-size: 2rem;
+  color: var(--social-color);
+  transition: all 0.3s ease;
+  position: relative;
+  z-index: 1;
 }
 
-@media (max-width: 720px) {
+.socialLink:hover .icon {
+  color: white;
+  transform: scale(1.2);
+}
+
+.label {
+  font-weight: 600;
+  font-size: 0.95rem;
+  position: relative;
+  z-index: 1;
+  transition: color 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .connect {
+    padding: 80px 0;
+  }
+
+  .sectionTitle {
+    font-size: 2rem;
+  }
+
+  .socialLinks {
+    gap: 1.5rem;
+  }
+
+  .socialLink {
+    min-width: 100px;
+    padding: 1.25rem;
+  }
+
+  .iconWrapper {
+    width: 50px;
+    height: 50px;
+  }
+
   .icon {
-    padding: 10px;
-    margin: 2px 20px;
-    font-size: 40px;
-    margin: space-between;
-  }
-  .linkedin {
-    margin: 15px;
-  }
-  .github {
-    margin: 15px;
-  }
-  .twitter {
-    margin: 15px;
-  }
-  .instagram {
-    margin: 15px;
+    font-size: 1.75rem;
   }
 }
 
-@media (max-width: 280px) {
+@media (max-width: 480px) {
+  .connect {
+    padding: 60px 0;
+  }
+
+  .sectionTitle {
+    font-size: 1.75rem;
+  }
+
+  .socialLinks {
+    gap: 1rem;
+  }
+
+  .socialLink {
+    min-width: 90px;
+    padding: 1rem;
+  }
+
+  .iconWrapper {
+    width: 45px;
+    height: 45px;
+  }
+
   .icon {
-    padding: 10px;
-    margin: 2px 20px;
-    font-size: 30px;
-    margin: space-between;
+    font-size: 1.5rem;
   }
-  .linkedin {
-    margin: 10px;
-  }
-  .github {
-    margin: 10px;
-  }
-  .twitter {
-    margin: 10px;
-  }
-  .instagram {
-    margin: 10px;
+
+  .label {
+    font-size: 0.85rem;
   }
 }
