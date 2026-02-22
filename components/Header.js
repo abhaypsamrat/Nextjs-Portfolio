@@ -66,22 +66,18 @@ export default function Header() {
   return (
     <header className={`${styles.header} ${scrolled ? styles.scrolled : ""}`}>
       <div className={styles.container}>
-        <Link href="/" className={styles.logo}>
+        <Link href="/" className={styles.logo} passHref>
           <span className={styles.logoText}>Abhay Pratap Samrat</span>
         </Link>
         
         <nav className={`${styles.nav} ${mobileMenuOpen ? styles.navOpen : ""}`}>
-          <a 
+          <Link 
             href="/" 
             className={styles.navLink} 
-            onClick={(e) => {
-              e.preventDefault();
-              setMobileMenuOpen(false);
-              router.push('/');
-            }}
+            onClick={() => setMobileMenuOpen(false)}
           >
             Home
-          </a>
+          </Link>
           <a 
             href="#about" 
             className={styles.navLink} 
@@ -96,28 +92,20 @@ export default function Header() {
           >
             Skills
           </a>
-          <a 
+          <Link 
             href="/project" 
             className={styles.navLink} 
-            onClick={(e) => {
-              e.preventDefault();
-              setMobileMenuOpen(false);
-              router.push('/project');
-            }}
+            onClick={() => setMobileMenuOpen(false)}
           >
             Projects
-          </a>
-          <a 
+          </Link>
+          <Link 
             href="/contact" 
             className={styles.navLink} 
-            onClick={(e) => {
-              e.preventDefault();
-              setMobileMenuOpen(false);
-              router.push('/contact');
-            }}
+            onClick={() => setMobileMenuOpen(false)}
           >
             Contact
-          </a>
+          </Link>
         </nav>
 
         <button

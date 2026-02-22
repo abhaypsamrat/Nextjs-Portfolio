@@ -85,7 +85,7 @@ export default function Project() {
       <main className={styles.project}>
         <div className={styles.container}>
           <div className={styles.header}>
-            <Link href="/" className={styles.backButton}>
+            <Link href="/" className={styles.backButton} passHref>
               <span style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
                 <FiArrowLeft className={styles.backIcon} />
                 Back to Home

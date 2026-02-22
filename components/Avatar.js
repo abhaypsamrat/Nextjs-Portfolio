@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import styles from "../styles/avatar.module.css";
 
 function Avatar() {
@@ -38,9 +39,9 @@ function Avatar() {
               <a href="#about" className={styles.primaryButton}>
                 Learn More
               </a>
-              <a href="/contact" className={styles.secondaryButton}>
+              <Link href="/contact" className={styles.secondaryButton}>
                 Get In Touch
-              </a>
+              </Link>
             </div>
           </div>
         </div>
