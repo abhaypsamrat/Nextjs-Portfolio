@@ -60,6 +60,8 @@
 
 .avatarImage {
   border-radius: 50%;
+  width: 280px;
+  height: 280px;
   object-fit: cover;
   object-position: center 30%;
   border: 5px solid white;
@@ -293,11 +295,6 @@
 
   .description {
     font-size: 1rem;
-  }
-
-  .avatarImage {
-    width: 220px;
-    height: 220px;
   }
 }
 
