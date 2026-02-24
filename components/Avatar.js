@@ -10,7 +10,7 @@ function Avatar() {
           <div className={styles.imageWrapper}>
             <div className={styles.imageContainer}>
               <Image
-                src="/assets/mylatestpic.jpg"
+                src="/assets/mylatestpic.jpeg"
                 alt="Abhay Pratap Samrat"
                 width={280}
                 height={280}
