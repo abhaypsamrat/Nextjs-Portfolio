@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import styles from "../styles/avatar.module.css";
+import mylatestpic from "../public/assets/mylatestpic.jpeg";
 
 function Avatar() {
   return (
@@ -10,7 +11,7 @@ function Avatar() {
           <div className={styles.imageWrapper}>
             <div className={styles.imageContainer}>
               <Image
-                src="/assets/mylatestpic.jpeg"
+                src={mylatestpic}
                 alt="Abhay Pratap Samrat"
                 width={280}
                 height={280}
