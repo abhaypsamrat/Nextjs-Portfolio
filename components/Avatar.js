@@ -25,7 +25,7 @@ function Avatar() {
               Abhay Pratap Samrat
             </h1>
             <p className={styles.title}>
-              React Native Developer | JavaScript Specialist
+              Software Engineer | Mobile App Developer
             </p>
             <p className={styles.description}>
               Building scalable mobile apps and modern web platforms with React ecosystem. 
